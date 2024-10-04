@@ -61,7 +61,7 @@
                     <div class="cards-label">+ Senior en executive management</div>
                     <div class="cards-label">+&nbsp;Diepgaand begrip van de industrie</div>
                 </div>
-                <p class="paragraph is-2">Executive search, ook wel ‘’headhunting’’ genoemd is een gespecialiseerde wervingsdienst waarbij ik mij meer richt op het vinden van hooggekwalificeerde kandidaten voor senior- en executive-level posities binnen jullie organisatie. Dit proces vereist een diepgaand begrip van de industrie en de specifieke behoeften van jullie organisatie, de vaardigheden en kwaliteiten die nodig zijn voor leiderschapsrollen.</p><a href="#Footer" class="main-button is-secondary w-button">Contact opnemen</a>
+                <p class="paragraph is-2">Executive search, ook wel ‘’headhunting’’ genoemd is een gespecialiseerde wervingsdienst waarbij ik mij meer richt op het vinden van hooggekwalificeerde kandidaten voor senior- en executive-level posities binnen jullie organisatie. Dit proces vereist een diepgaand begrip van de industrie en de specifieke behoeften van jullie organisatie, de vaardigheden en kwaliteiten die nodig zijn voor leiderschapsrollen.</p>
             </div>
             <div class="card-right">
                 <div class="card-image-wrapper">
@@ -85,14 +85,15 @@
                     <div class="cards-label is-3">+ Persoonlijke benadering</div>
                 </div>
                 <p class="paragraph is-3">
-                    Door te kiezen voor 
-                    <span class="text-span-3">werving en selectie</span> + een <span class="text-span-4">op maat gemaakt mediapakket</span>, kies je voor een gerichte campagne die specifiek zijn afgestemd op het aantrekken van talenten die perfect passen bij jullie bedrijfscultuur en de eisen van de vacature. Dit leidt tot een hogere kwaliteit van kandidaten, waardoor je tijd en middelen bespaart op het wervingsproces. Video content is dé manier om jouw boodschap krachtig over te brengen. Je krijgt meer <span class="text-span-5">gekwalificeerde leads</span> die echt interesse hebben in jullie vacatures en organisatie.<br></p>
-                    <a href="#Footer" class="main-button w-button">Contact opnemen</a>
+                    Door te kiezen voor
+                    <span class="text-span-3">werving en selectie</span> + een <span class="text-span-4">op maat gemaakt mediapakket</span>, kies je voor een gerichte campagne die specifiek zijn afgestemd op het aantrekken van talenten die perfect passen bij jullie bedrijfscultuur en de eisen van de vacature. Dit leidt tot een hogere kwaliteit van kandidaten, waardoor je tijd en middelen bespaart op het wervingsproces. Video content is dé manier om jouw boodschap krachtig over te brengen. Je krijgt meer <span class="text-span-5">gekwalificeerde leads</span> die echt interesse hebben in jullie vacatures en organisatie.<br>
+                </p>
+                <a href="#Footer" class="main-button w-button">Contact opnemen</a>
             </div>
             <div class="card-right">
                 <div class="card-image-wrapper">
                     <div class="simpleParallax" style="overflow: hidden;">
-                        <img class="image-3 is-1" src="<?php echo get_template_directory_uri(); ?>/images/exp-2.webp" alt="image">
+                        <img class="image-3 is-1" src="<?php echo get_template_directory_uri(); ?>/images/exp-3.webp" alt="image">
                     </div>
                 </div>
             </div>

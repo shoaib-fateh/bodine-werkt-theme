@@ -323,8 +323,9 @@ header {
 }
 
 .content--sticky {
+  height: 135vh !important;
   border-radius: 50px 50px 0 0;
-  width: 100vw;
+  /* width: 100vw; */
   position: sticky;
   top: 0;
   --offset: 0px;
@@ -335,7 +336,7 @@ header {
 
 
 .content {
-  padding: var(--page-padding);
+  /* padding: var(--page-padding); */
   display: flex;
   /* flex-direction: column;
   justify-content: center;
@@ -394,6 +395,75 @@ header {
   color: var(--white);
   font-size: 4rem;
   line-height: 1;
+}
+
+.h1.is-2 {
+  color: var(--white);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.h1.is-3 {
+  color: var(--bg-1);
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.cards-label.is-3 {
+  border-color: var(--pink-hard);
+  color: var(--pink-hard);
+}
+
+.paragraph.is-3 {
+  color: var(--bg-1);
+}
+
+.main-button {
+  background-color: var(--pink-hard);
+  color: var(--white);
+  text-transform: uppercase;
+  border: 2px solid #0000;
+  border-radius: 30px;
+  align-self: flex-start;
+  padding: 0.625rem 1.25rem;
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  transition: background-color .2s;
+}
+
+.w-button {
+  color: #fff;
+  line-height: inherit;
+  cursor: pointer;
+  border: 0;
+  border-radius: 0;
+  padding: 9px 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.bg-3 
+.main-button {
+  background-color: var(--pink-hard);
+  color: var(--white);
+  text-transform: uppercase;
+  border: 2px solid #0000;
+  border-radius: 30px;
+  align-self: flex-start;
+  padding: 0.625rem 1.25rem;
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  transition: background-color .2s;
+  border-radius: 50rem !important;
+}
+
+.text-span-3, .text-span-4, .text-span-5 {
+  font-weight: 700;
 }
 
 .tags-group {
