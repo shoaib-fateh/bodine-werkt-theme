@@ -1,35 +1,12 @@
 /*
-Theme Name: Bodine Werkt
-Theme URI: http://bodinewerkt.com
+Theme Name: Dev Onchoi
+Theme URI: https://devonchoi.bijlesbezorgd.nl/
 Author: Shoaib Fateh
-Author URI: http://yourwebsite.com
-Description: A custom WordPress theme for Bodine Werkt.
+Author URI: http://github.com/shoaib-fateh21
+Description: A custom WordPress theme for https://devonchoi.bijlesbezorgd.nl/.
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: custom-theme, one-page, responsive
 Text Domain: bodinewerkt
 */
-
-body {
-    margin: 0;
-    font-family: 'Arial', sans-serif;
-    color: #ffffff;
-    background-color: #2C1D29;
-}
-h1 {
-    font-size: 4rem;
-    color: #ffffff;
-}
-nav ul {
-    display: flex;
-    list-style: none;
-    padding: 0;
-}
-nav ul li {
-    margin-right: 20px;
-}
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-}

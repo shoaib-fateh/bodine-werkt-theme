@@ -9,14 +9,14 @@
 </head>
 <body <?php body_class(); ?>>
 
-<header class="bg-purple-700 text-white">
-    <div class="container mx-auto flex justify-between items-center p-4">
-        <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo" class="h-12">
-        <nav class="space-x-4">
-            <a href="#over-mij" class="hover:underline">OVER MIJ</a>
-            <a href="#vacatures" class="hover:underline">VACATURES</a>
-            <a href="#blog" class="hover:underline">BLOG</a>
-            <a href="#contact" class="bg-pink-500 text-white rounded-lg px-4 py-2 hover:bg-pink-600">CONTACT OPNEMEN</a>
-        </nav>
-    </div>
+<header>
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo" class="h-[72px]">
+    <nav class="navbar">
+        <a href="#over-mij" class="hover:underline">OVER MIJ</a>
+        <a href="#vacatures" class="hover:underline">VACATURES</a>
+        <a href="#blog" class="hover:underline">BLOG</a>
+        <a href="#contact" class="contact">CONTACT OPNEMEN</a>
+    </nav>
 </header>
+
+
