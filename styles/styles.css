@@ -8,6 +8,7 @@
   --pink-hard: #f0007b;
   --pink-soft: #fed8d4;
   --white: #fff;
+  --pink-soft: #db8982;
 }
 
 @font-face {
@@ -280,5 +281,238 @@ header {
   font-size: 1.4rem;
   font-weight: 400;
   line-height: 150%;
+  text-decoration: none;
+}
+
+
+/* footer */
+.footer {
+  grid-row-gap: 40px;
+  background-color: var(--white);
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+  position: relative;
+}
+
+.padding-global.footer-bg {
+  background-color: var(--pink-soft);
+}
+
+.padding-global {
+  width: 100%;
+  height: 100%;
+  padding-top: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.container {
+  width: 100%;
+  max-width: none;
+}
+
+.connect__wrapper {
+  grid-column-gap: 40px;
+  border: 0 solid #2b1b24;
+  border-bottom: 1px solid #a8645e;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  text-decoration: none;
+  display: flex;
+}
+
+.connect-container__left {
+  grid-row-gap: 40px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  max-width: 50vw;
+  margin-bottom: 100px;
+  padding-top: 100px;
+  text-decoration: none;
+  display: flex;
+}
+
+.connect-container__right {
+  grid-column-gap: 32px;
+  justify-content: flex-start;
+  align-self: stretch;
+  align-items: flex-end;
+  width: 100%;
+  max-width: 600px;
+  text-decoration: none;
+  display: flex;
+}
+
+.heading-16.footer-heading {
+  color: var(--white);
+}
+h2 {
+  color: var(--purple-dark);
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: Poppins, sans-serif;
+  font-size: 6rem;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.footer-text.cc-footer {
+  color: var(--white);
+}
+
+.footer-text {
+  color: #2b1b24;
+  width: 50%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Poppins, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration: none;
+}
+
+.connect-buttons {
+  grid-column-gap: 10px;
+  flex: 0 auto;
+  justify-content: center;
+  align-items: flex-start;
+  text-decoration: none;
+  display: flex;
+}
+
+.text-span-2.footer-heading-color {
+  color: var(--white);
+}
+
+.text-span-2 {
+  color: var(--pink-hard);
+}
+
+.footer-text.cc-footer {
+  color: var(--white);
+}
+.footer-text {
+  color: #2b1b24;
+  width: 50%;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: Poppins, sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 150%;
+  text-decoration: none;
+}
+
+.connect-buttons {
+  grid-column-gap: 10px;
+  flex: 0 auto;
+  justify-content: center;
+  align-items: flex-start;
+  text-decoration: none;
+  display: flex;
+}
+
+
+.main-button {
+  background-color: var(--pink-hard);
+  color: var(--white);
+  text-transform: uppercase;
+  border: 2px solid #0000;
+  border-radius: 30px;
+  align-self: flex-start;
+  padding: 0.625rem 1.25rem;
+  font-family: Poppins, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  transition: background-color .2s;
+}
+.w-button {
+  color: #fff;
+  line-height: inherit;
+  cursor: pointer;
+  background-color: #3898ec;
+  border: 0;
+  border-radius: 0;
+  padding: 9px 15px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+.vrijstaand-1 {
+  object-fit: cover;
+  height: 100%;
+}
+
+footer img {
+  box-sizing: border-box;
+  aspect-ratio: auto;
+  object-fit: cover;
+  border-radius: 30px;
+  width: 100%;
+  max-width: 100%;
+  display: inline-block;
+}
+
+.main-button.footer-button {
+  border-color: var(--white);
+  background-color: var(--pink-soft);
+  border: 2px solid;
+  border-radius: 50rem;
+}
+
+.copyright {
+  grid-column-gap: 32px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-decoration: none;
+  display: flex;
+}
+
+.text-10.footer-bottom-text {
+  color: var(--white);
+}
+
+.text-10 {
+  color: var(--purple-dark);
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: .875rem;
+  font-weight: 300;
+  line-height: 150%;
+  text-decoration: none;
+}
+
+
+.text-11.footer-bottom-text {
+  color: var(--white);
+}
+
+.text-11 {
+  color: var(--purple-dark);
+  text-align: right;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: .875rem;
+  font-weight: 300;
+  line-height: 150%;
+  text-decoration: none;
+}
+
+.dees-link {
+  color: var(--white);
+  font-weight: 700;
   text-decoration: none;
 }
