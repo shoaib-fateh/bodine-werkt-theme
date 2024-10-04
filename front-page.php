@@ -1,10 +1,30 @@
 <?php get_header(); ?>
-<div class="intro-section" style="background-color: #2C1D29; color: white; height: 100vh; display: flex; align-items: center; justify-content: center;">
-    <div class="container" style="text-align: center;">
-        <img src="<?php echo get_template_directory_uri(); ?>/image/logo.png" alt="Bodine Werkt Logo" style="width: 100px; margin-bottom: 30px;">
-        <h1 style="font-size: 4rem; font-weight: bold;">BODINE WERKT<br>BETROUWBAAR</h1>
-        <p style="font-size: 1.5rem;">Werving & Selectie | Executive Search | Recruitment | Mediapakket</p>
-        <a href="/contact" style="margin-top: 20px; background-color: #FF00A0; padding: 10px 20px; border-radius: 5px; color: white; text-decoration: none; font-size: 1.2rem;">Contact Opnemen</a>
+
+<div class="section__hero">
+    <div class="gp">
+    <div class="hero__title">
+        <div class="hero-title__left">
+            <div class="hero-title__bodine ">
+                <h1 class="hero-title-right hero-heading">BODINE<br>WERKT</h1>
+
+                <div class="ticker-wrapper">
+                    <div>
+                        <div class="text-block hero-heading rotatingText-adjective">TRANSPARANT</div>
+                        <div class="text-block hero-heading rotatingText-adjective">BETROUWBAAR</div>
+                        <div class="text-block hero-heading rotatingText-adjective">ENTHOUSIAST</div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <div class="hero__subtitle">
+        <p class="hero-subtitle">Werving &amp; Selectie<br>Executive Search<br>Recruitment Mediapakket</p>
+    </div>
+
+    <img src="<?php echo get_template_directory_uri(); ?>/images/intro.webp" loading="eager" width="786" height="857" alt="bodine buijsserd" class="intro-img">
 </div>
+</div>
+</div>
+
 <?php get_footer(); ?>
+ 
