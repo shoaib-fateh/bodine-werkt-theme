@@ -10,7 +10,7 @@
 <body <?php body_class(); ?>>
 
 <header>
-    <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo" class="h-[72px]">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo" class="h-[72px]" style="width: unset;">
     <nav class="navbar">
         <a href="#over-mij" class="hover:underline">OVER MIJ</a>
         <a href="#vacatures" class="hover:underline">VACATURES</a>
