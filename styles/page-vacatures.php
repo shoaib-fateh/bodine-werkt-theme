@@ -14,8 +14,8 @@ get_header(); ?>
             <div class="padding-global">
                 <div class="container">
                     <div class="section-headding-area">
-                        <h1 class="h1 vacatures">BLOG</h1>
-                        <p class="hero-subtitle--vacatures">Hier deel ik mijn ideeën, ervaringen en andere persoonlijke insights in mijn werk en leven. Bij vragen of reacties mag je altijd contact opnemen!</p>
+                        <h1 class="h1 vacatures">VACATURES</h1>
+                        <p class="hero-subtitle--vacatures">Een beter salaris, fijne secundaire voorwaarden of een betere klik met je collega’s? Kortom, ben jij opzoek naar meer werkplezier? Vind jouw werkplezier met onderstaande vacatures!</p>
                     </div>
                 </div>
             </div>
