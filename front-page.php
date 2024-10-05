@@ -1,4 +1,12 @@
-<?php get_header(); ?>
+<?php
+// Fetch blogs (custom post type)
+$args = array(
+    'post_type' => 'blogs', // Change to your custom post type 'blog'
+    'posts_per_page' => 10, // Limit the number of blogs
+);
+$query = new WP_Query($args);
+
+get_header(); ?>
 
 <div class="section__hero">
     <div class="gp">
@@ -141,6 +149,55 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+</section>
+
+<section class="section__blog is-featured">
+    <div class="container-large-blog is-featured">
+        <div class="blog-home__left">
+            <h2 class="home-blog__heading">IK&nbsp;SCHRIJF <span class="blog-span">BLOGS</span> OVER&nbsp;MIJN WERK</h2>
+        </div>
+        <div class="w-layout-grid blog-grid is-featured">
+            <div class="w-dyn-list">
+                <div role="list" class="blog-list w-dyn-items">
+                
+                <?php if ($query->have_posts()) : ?>
+                                    <?php while ($query->have_posts()) : $query->the_post(); ?>
+                                        <div role="listitem" class="w-dyn-item">
+                                            <a href="<?php the_permalink(); ?>" class="blog-item w-inline-block">
+                                                <div class="blog-image-wrap is-blog">
+                                                    <div class="simpleParallax" style="overflow: hidden;">
+                                                        <img width="380" parallax-anim="" alt="<?php the_title(); ?>" src="<?php echo esc_url(get_field('photo')); ?>" class="blog-image" style="transform: translate3d(0px, -1px, 0px) scale(1.1); will-change: transform; transition: transform 0.4s cubic-bezier(0, 0, 0, 1) 0s, scale 0.3s ease 0s;">
+                                                    </div>
+                                                </div>
+                                                <div class="blog-content">
+                                                    <h2 class="job-title cc-blog"><?php the_title(); ?></h2>
+                                                    <p class="paragraph-detials-medium cc-vacatures"><?php echo wp_trim_words(get_the_content(), 15); ?></p>
+                                                    <div class="profile-block">
+                                                        <img width="50" src="<?php echo esc_url(get_avatar_url(get_the_author_meta('ID'))); ?>" alt="<?php the_author(); ?>" sizes="48px" class="profile-picture">
+                                                        <div class="normal-wrapper">
+                                                            <div class="title-small mb-0"><?php the_author(); ?></div>
+                                                            <p class="mb-0"><?php echo get_the_date(); ?></p>
+                                                        </div>
+                                                    </div>
+                                                    <div fs-cmsfilter-field="categories" class="text-block-2">
+                                                        <!-- <?php the_category(', '); ?> -->
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    <?php endwhile; ?>
+                                <?php else : ?>
+                                    <p><?php esc_html_e('Sorry, no blogs matched your criteria.', 'textdomain'); ?></p>
+                                <?php endif; ?>
+                                <?php 
+                                // Reset post data
+                                wp_reset_postdata(); 
+                                ?>
+                
+                </div>
+            </div><a id="w-node-_508f1a1c-d16f-d9d1-dc22-eb8f836b2c60-7f4bd3a7" href="/blog" class="main-button w-button">BEKIJK&nbsp;ALLE&nbsp;BLOGS</a>
         </div>
     </div>
 </section>
