@@ -1,0 +1,49 @@
+/* Media Query for 990px and below */
+@media (min-width: 990px) {
+  .navbar {
+    display: flex; /* Hide desktop navbar */
+  }
+
+  .hamburger {
+    display: none; /* Show hamburger menu */
+  }
+}
+
+@media (max-width: 990px) {
+    .navbar {
+      display: none; /* Hide desktop navbar */
+    }
+  
+    .hamburger {
+      display: flex; /* Show hamburger menu */
+    }
+  
+    .mobile-navbar {
+      display: none;
+      position: fixed;
+      top: -100%; /* Start from above the viewport */
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #23161d;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: top 0.5s ease; /* Animate the dropdown */
+      z-index: 999;
+    }
+  
+    .mobile-navbar a {
+      color: white;
+      text-decoration: none;
+      font-size: 24px;
+      padding: 15px;
+    }
+  
+    /* When menu is active (visible), slide it into view */
+    .mobile-navbar.active {
+      top: 0; /* Bring the menu into the viewport */
+    }
+  }
+  

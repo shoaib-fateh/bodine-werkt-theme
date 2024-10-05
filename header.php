@@ -11,12 +11,30 @@
 
 <header>
     <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo" class="h-[72px]" style="width: unset;">
+    
+    <!-- Desktop Navbar -->
     <nav class="navbar">
         <a href="#over-mij" class="hover:underline">OVER MIJ</a>
         <a href="#vacatures" class="hover:underline">VACATURES</a>
         <a href="#blog" class="hover:underline">BLOG</a>
         <a href="#contact" class="contact">CONTACT OPNEMEN</a>
     </nav>
+
+    <!-- Hamburger Menu Icon for Mobile -->
+    <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Mobile Navbar -->
+    <nav class="mobile-navbar">
+        <a href="#over-mij">OVER MIJ</a>
+        <a href="#vacatures">VACATURES</a>
+        <a href="#blog">BLOG</a>
+        <a href="#contact">CONTACT OPNEMEN</a>
+    </nav>
 </header>
+
 
 

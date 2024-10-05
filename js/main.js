@@ -14,3 +14,15 @@ function rotateAdjectives() {
 
 // Rotate every 3 seconds
 setInterval(rotateAdjectives, 2000);
+
+
+
+// Header
+
+function toggleMenu() {
+    const mobileNavbar = document.querySelector('.mobile-navbar');
+    mobileNavbar.classList.toggle('active');
+
+    console.log("Clicked!");
+    
+}
