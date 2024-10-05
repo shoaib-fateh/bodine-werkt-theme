@@ -27,4 +27,14 @@ jQuery(document).ready(function($) {
           $(".mobile-navbar").slideDown(500).addClass("active");
       }
   });
+
+  $('a[href*="#"]').on('click', function(event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($(this).attr('href')).offset().top
+    }, 500); // 500 milliseconds for smooth scroll
 });
+});
+
+
