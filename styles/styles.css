@@ -943,3 +943,9 @@ footer img {
   font-weight: 700;
   text-decoration: none;
 }
+
+
+/* Blog */
+.main-wrapper {
+  background-color: #fff;
+}

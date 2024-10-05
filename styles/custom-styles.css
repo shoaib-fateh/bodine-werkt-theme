@@ -7848,6 +7848,19 @@ color: var(--white);
 .vacatures-hero-section {
   border-bottom-right-radius: 40px;
   border-bottom-left-radius: 40px;
+  position: relative;
+}
+
+.vacatures-hero-section::before {
+  content: "";
+  background-color: red;
+  border-bottom-right-radius: 60px;
+  border-bottom-left-radius: 60px;
+  padding-top: 5rem;
+  padding-bottom: 3.75rem;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .section-headding-area {
