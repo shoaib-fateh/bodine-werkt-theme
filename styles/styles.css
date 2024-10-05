@@ -147,13 +147,12 @@ header img {
 
 /* intro-section */
 .section__hero {
-  /* grid-column-gap: 80px; */
-  justify-content: center;
-  align-items: flex-start;
+  grid-column-gap: 80px;
   width: 100%;
   height: 88vh;
   display: flex;
   overflow: hidden;
+  align-items: flex-end;
 }
 
 .intro-section * {
@@ -453,7 +452,7 @@ header img {
 }
 
 .circle-text-wrap {
-  z-index: 1;
+  z-index: 9999999;
   aspect-ratio: 1;
   background-color: var(--white);
   pointer-events: none;
@@ -463,34 +462,41 @@ header img {
   position: absolute;
   top: 60px;
   left: -70px;
+  transition: transform 0.1s linear;
 }
 
-.unmuted {
-  flex-flow: column;
+.video-container {
+  overflow: hidden;
+}
+
+/* Add styles for the mute/unmute button */
+#mute-button {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  max-width: 100%;
-  display: flex;
-  position: absolute;
-  inset: 0%;
+  cursor: pointer;  /* Ensure the cursor is a pointer */
+  pointer-events: all;
+  transition: transform 0.2s;
+  z-index: 10; /* Ensure it's on top of other elements */
 }
 
-.circle-text {
-  color: var(--pink-hard);
-  text-align: center;
-  text-transform: uppercase;
-  width: 100%;
-  font-family: Poppins, sans-serif;
-  font-size: 24px;
-  font-weight: 800;
-  line-height: 1.25;
+/* Make the button slightly larger on hover */
+#mute-button:hover {
+  transform: scale(1.1);
 }
 
-.code-embed {
-  object-fit: fill;
+.cursor-circle {
   width: 100%;
-  position: static;
+  height: 100%;
+}
+
+svg {
+  width: 24px;
+  height: 24px;
 }
 
 .w-embed:before, .w-embed:after {
