@@ -118,3 +118,9 @@
     padding-right: 1rem;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .h1.vacatures {
+      font-size: 4rem;
+  }
+}
