@@ -26,43 +26,48 @@ get_header(); ?>
                 <div class="container cc-small">
                     <div class="containt">
                         <div class="blog-area w-dyn-list">
-                            <div fs-cmsfilter-element="list" role="list" class="blog-list w-dyn-items">
-                            <!-- posts -->
-                                <?php if ($query->have_posts()) : ?>
-                                    <div class="w-dyn-items">
-                                        <?php while ($query->have_posts()) : $query->the_post(); ?>
-                                            <div class="w-dyn-item">
-                                                <a href="<?php the_permalink(); ?>" class="blog-item w-inline-block">
-                                                    <div class="blog-image-wrap is-blog">
-                                                        <div class="simpleParallax" style="overflow: hidden;">
-                                                            <img width="380" parallax-anim="" alt="<?php the_title(); ?>" src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" style="transform: translate3d(0px, 21px, 0px) scale(1.1); will-change: transform; transition: transform 0.4s cubic-bezier(0, 0, 0, 1) 0s, scale 0.3s ease 0s;">
-                                                        </div>
-                                                    </div>
-                                                    <div class="blog-content">
-                                                        <h2 class="job-title cc-blog"><?php the_title(); ?></h2>
-                                                        <p class="paragraph-detials-medium cc-vacatures"><?php echo wp_trim_words(get_the_content(), 15); ?></p>
-                                                        <div class="profile-block">
-                                                            <img width="50" src="<?php echo get_avatar_url(get_the_author_meta('ID')); ?>" alt="" class="profile-picture">
-                                                            <div class="normal-wrapper">
-                                                                <div class="title-small mb-0"><?php the_author(); ?></div>
-                                                                <p class="mb-0"><?php echo get_the_date(); ?></p>
-                                                            </div>
-                                                        </div>
-                                                        <div fs-cmsfilter-field="categories" class="text-block-2"><?php the_category(', '); ?></div>
-                                                    </div>
-                                                </a>
-                                            </div>
-                                        <?php endwhile; ?>
-                                    </div>
-                                <?php else : ?>
-                                    <p><?php esc_html_e('Sorry, no posts matched your criteria.', 'textdomain'); ?></p>
-                                <?php endif; ?>
 
-                                <?php 
-                                // Reset post data
-                                wp_reset_postdata(); 
-                                ?>
-                                <!-- posts -->
+
+
+
+
+
+
+                            <div fs-cmsfilter-element="list" role="list" class="blog-list w-dyn-items">
+                            <?php if ($query->have_posts()) : ?>
+                                    <?php while ($query->have_posts()) : $query->the_post(); ?>
+                                    <div role="listitem" class="w-dyn-item"><a href="<?php the_permalink(); ?>" class="blog-item w-inline-block">
+                                        <div class="blog-image-wrap is-blog">
+                                            <div class="simpleParallax" style="overflow: hidden;">
+                                                <img width="380" parallax-anim="" alt="<?php the_title(); ?>" src="<?php echo esc_url(get_field('photo')); ?>" class="blog-image" style="transform: translate3d(0px, -1px, 0px) scale(1.1); will-change: transform; transition: transform 0.4s cubic-bezier(0, 0, 0, 1) 0s, scale 0.3s ease 0s;">
+                                            </div>
+                                            </div>
+                                                <div class="blog-content"><h2 class="job-title cc-blog"><?php the_title(); ?></h2><p class="paragraph-detials-medium cc-vacatures"><?php echo wp_trim_words(get_the_content(), 15); ?></p>
+                                                <div class="profile-block">
+                                                    <img width="50" src="<?php echo esc_url(get_avatar_url(get_the_author_meta('ID'))); ?>" alt="<?php the_author(); ?>" sizes="48px" class="profile-picture">
+                                                    <div class="normal-wrapper">
+                                                        <div class="title-small mb-0"><?php the_author(); ?></div>
+                                                    <p class="mb-0"><?php echo get_the_date(); ?></p>
+                                                </div>
+                                                </div>
+                                                    <div fs-cmsfilter-field="categories" class="text-block-2">
+                                                        <!-- <?php the_category(', '); ?> -->
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    <?php endwhile; ?>
+
+                            <?php else : ?>
+                                <p><?php esc_html_e('Sorry, no posts matched your criteria.', 'textdomain'); ?></p>
+                            <?php endif; ?>
+
+                            <?php 
+                            // Reset post data
+                            wp_reset_postdata(); 
+                            ?>
+    
+                            <!-- posts -->
 
                             </div>
                         </div>
@@ -83,12 +88,12 @@ get_header(); ?>
 
                                     if ($random_query->have_posts()) :
                                         while ($random_query->have_posts()) : $random_query->the_post(); ?>
-                                            <div role="listitem" class="w-dyn-item">
-                                                <a href="<?php the_permalink(); ?>" class="featured-blog-item-link w-inline-block">
-                                                    <div class="featured-blog-item-wrapper">
-                                                        <div class="similar-job-list-image-wrapper">
-                                                            <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'medium'); ?>" loading="lazy" alt="<?php the_title(); ?>" sizes="(max-width: 479px) 87vw, (max-width: 767px) 23vw, (max-width: 991px) 19vw, 11vw" class="similar-job-list-image">
-                                                        </div>
+                                        <div role="listitem" class="w-dyn-item">
+                                            <a href="<?php the_permalink(); ?>" class="featured-blog-item-link w-inline-block">
+                                                <div class="featured-blog-item-wrapper">
+                                                    <div class="similar-job-list-image-wrapper">
+                                                        <img src="<?php echo esc_url(get_field('photo')); ?>" loading="lazy" alt="<?php the_title(); ?>" class="similar-job-list-image">
+                                                    </div>
                                                         <div class="head-form cc-margin"><?php the_title(); ?></div>
                                                     </div>
                                                 </a>
