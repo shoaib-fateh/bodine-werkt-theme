@@ -17,12 +17,14 @@ setInterval(rotateAdjectives, 2000);
 
 
 
-// Header
-
-function toggleMenu() {
-    const mobileNavbar = document.querySelector('.mobile-navbar');
-    mobileNavbar.classList.toggle('active');
-
-    console.log("Clicked!");
-    
-}
+jQuery(document).ready(function($) {
+  $(".hamburger").on("click", function() {
+      if ($(".mobile-navbar").hasClass("active")) {
+          $(".mobile-navbar").slideUp(500, function() {
+              $(this).removeClass("active");
+          });
+      } else {
+          $(".mobile-navbar").slideDown(500).addClass("active");
+      }
+  });
+});

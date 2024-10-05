@@ -55,6 +55,11 @@ header {
   padding-right: 2rem;
 }
 
+header img {
+  bottom: -5px;
+  position: relative;
+}
+
 .navbar {
   display: flex;
   justify-content: center;
@@ -75,6 +80,26 @@ header {
   text-decoration: none;
   display: flex;
   margin-left: 25px;
+  position: relative;
+}
+
+.navbar a.hover::after {
+  content: "";
+  position: absolute;
+  background-color: #f0007b;
+  width: 0;
+  height: 3px;
+  border-radius: 100px;
+  bottom: -4px;
+  left: 50%; /* Start at the center */
+  transform: translateX(-50%); /* Center it horizontally */
+  transition: .3s ease; /* Smooth transition */
+}
+
+.navbar a.hover:hover::after {
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .contact {

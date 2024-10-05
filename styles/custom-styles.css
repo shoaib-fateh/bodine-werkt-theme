@@ -177,27 +177,27 @@ td, th {
 }
 
 .w-icon-slider-right:before {
-  content: "î˜€";
+  content: "Ã®Ëœâ‚¬";
 }
 
 .w-icon-slider-left:before {
-  content: "î˜";
+  content: "Ã®ËœÂ";
 }
 
 .w-icon-nav-menu:before {
-  content: "î˜‚";
+  content: "Ã®Ëœâ€š";
 }
 
 .w-icon-arrow-down:before, .w-icon-dropdown-toggle:before {
-  content: "î˜ƒ";
+  content: "Ã®ËœÆ’";
 }
 
 .w-icon-file-upload-remove:before {
-  content: "î¤€";
+  content: "Ã®Â¤â‚¬";
 }
 
 .w-icon-file-upload-icon:before {
-  content: "î¤ƒ";
+  content: "Ã®Â¤Æ’";
 }
 
 * {
@@ -2385,27 +2385,27 @@ font-family: webflow-icons !important;
 }
 
 .w-icon-slider-right:before {
-content: "î˜€";
+content: "Ã®Ëœâ‚¬";
 }
 
 .w-icon-slider-left:before {
-content: "î˜";
+content: "Ã®ËœÂ";
 }
 
 .w-icon-nav-menu:before {
-content: "î˜‚";
+content: "Ã®Ëœâ€š";
 }
 
 .w-icon-arrow-down:before, .w-icon-dropdown-toggle:before {
-content: "î˜ƒ";
+content: "Ã®ËœÆ’";
 }
 
 .w-icon-file-upload-remove:before {
-content: "î¤€";
+content: "Ã®Â¤â‚¬";
 }
 
 .w-icon-file-upload-icon:before {
-content: "î¤ƒ";
+content: "Ã®Â¤Æ’";
 }
 
 * {
@@ -11026,11 +11026,14 @@ strong {
   .navbar__menu {
     background-color: var(--purple-dark);
     flex-flow: column;
-    justify-content: center;
-    align-items: center;
     height: 88vh;
     padding-top: 20px;
     padding-bottom: 2rem;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
   }
 
   .navbar__link {
@@ -11925,7 +11928,7 @@ strong {
   }
 
   .navbar__menu {
-    height: 88vh;
+    height: 100vh;
   }
 
   .navbar__link {
