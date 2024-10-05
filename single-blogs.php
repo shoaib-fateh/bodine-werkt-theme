@@ -31,40 +31,6 @@ if ( have_posts() ) :
         <section class="vacatures-inner-containt">
             <div class="padding-global">
                 <div class="container cc-small">
-                    <div class="detalies-grid">
-                        <div class="text-area">
-                            <div class="txt-details">Dienstverband</div>
-                            <div class="details w-dyn-bind-empty">
-
-                            </div>
-                        </div>
-                        <div class="text-area">
-                            <div class="txt-details">Plaats</div>
-                            <div class="details">Landelijk</div>
-                        </div>
-                        <div class="text-area">
-                            <div class="txt-details">Provincie</div>
-                            <div class="w-dyn-list">
-                                <div role="list" class="w-dyn-items">
-                                    <div role="listitem" class="w-dyn-item">
-                                        <div class="text-block-3">Landelijk</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-area">
-                            <div class="txt-details">Sector</div>
-                            <div class="details w-dyn-bind-empty"></div>
-                        </div>
-                        <div class="text-area">
-                            <div class="txt-details">Salarisindicatie</div>
-                            <div class="details">-</div>
-                        </div>
-                        <div class="text-area">
-                            <div class="txt-details">Aantal uur</div>
-                            <div class="details">36 - 40</div>
-                        </div>
-                    </div>
                     <div class="containt">
                         <div class="rich-text-area">
                             <h2 class="job-title">Open Sollicitatie</h2>
@@ -87,7 +53,7 @@ if ( have_posts() ) :
                         </div>
 
                         <div class="similar-jobs">
-                            <div class="txt-details">Featured Jobs</div>
+                            <div class="txt-details">Featured</div>
                             <div class="w-dyn-list">
                                 <div role="list" class="simililar-job-list w-dyn-items">
                                     <div role="listitem" class="w-dyn-item"><a href="/vacatures/medewerker-contactcenter" class="text-decoration-none w-inline-block">
