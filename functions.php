@@ -9,7 +9,8 @@ function bodine_werkt_enqueue_styles() {
 
 add_action('wp_enqueue_scripts', 'bodine_werkt_enqueue_styles');
 
-function create_custom_post_type() {
+function create_custom_post_types() {
+    // Register Blogs Post Type
     register_post_type('blogs',
         array(
             'labels' => array(
@@ -23,6 +24,21 @@ function create_custom_post_type() {
             'menu_icon' => 'dashicons-format-aside',
         )
     );
-}
-add_action('init', 'create_custom_post_type');
 
+    // Register Vacatures Post Type
+    register_post_type('vacatures',
+        array(
+            'labels' => array(
+                'name' => __('Vacatures'),
+                'singular_name' => __('Vacature')
+            ),
+            'public' => true,
+            'has_archive' => true,
+            'rewrite' => array('slug' => 'vacatures'),
+            'supports' => array('title', 'editor', 'thumbnail'),
+            'menu_icon' => 'dashicons-businessman', // Choose an appropriate icon for your post type
+        )
+    );
+}
+
+add_action('init', 'create_custom_post_types');
